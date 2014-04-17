@@ -11,7 +11,7 @@ else:
 	workers = multiprocessing.cpu_count() * 2 + 1
 
 
-worker_class = "gevent"
+worker_class = "socketio.sgunicorn.GeventSocketIOWorker"
 daemon = True
 bind = "unix:{0}run/appserver.sock".format(cart_dir)
 pidfile = "{0}run/appserver.pid".format(cart_dir)
