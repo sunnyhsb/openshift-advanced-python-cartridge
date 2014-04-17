@@ -115,7 +115,7 @@ function build_server() {
             pip install gevent
             ;;
         gunicorn)
-            pip install gevent gunicorn
+            pip install gevent gevent-socketio gunicorn 
             ;;
     esac
 
